@@ -1,11 +1,11 @@
 import React from 'react';
-import {Container} from './style';
+import {Container} from "C:/Users/Vinicius Gonçalves/Documents/web/src/components/Content/style";
 
-const Content: React.FC =() =>{
+const Content: React.FC =({children}) =>{
     return (
         <Container>
-        <h1>Content</h1>
-  </Container>  );
+        {children}
+        </Container>  );
 }
 
 export default Content;

@@ -1,17 +1,17 @@
 export default{
-    title: 'dark',
+    title: 'light',
+// definição das cores do tema claro
+    colors:{
+        primary: '#DCDCDC',
+        secondary: '#FFFF',
+        tertiary: '#F5F5F5',
 
-    color:{
-        primary: '#212121',
-        secondary: '#363636',
-        tertiary: '#D4D4D4',
-
-        white: '#FFFF',
-        black: '#000',
+        white: '#000',
+        black: '#FFF',
         gray: '#BFBFBF',
 
-        success: '#FFC700',
-        info: '#110066',
-        warning: '#90CBFB',
+        success: '#03BB85',
+        info: '#3B5998',
+        warning: '#FF6961',
     },
 };

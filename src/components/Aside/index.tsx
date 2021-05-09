@@ -1,11 +1,46 @@
 import React from 'react';
-import {Container} from './style';
+import {Container,Header, LogImg, MenuContainer, MenuItemLink, Title} from './style';
+import {
+  IoStatsChartOutline,
+  IoArrowUpSharp,
+  IoArrowDownSharp, 
+  IoEnterOutline
+  } from 'react-icons/io5';
+import LogoImg from '../../assets/logo.svg'
+
 
 const Aside: React.FC =() =>{
     return (
         <Container>
-        <h1>Aside</h1>
-  </Container>  );
+        <Header>
+          <LogImg src={LogoImg} alt ="Logo meu banco" />
+          <Title>Meu Banco</Title>
+        </Header>
+
+        <MenuContainer>
+        
+           <MenuItemLink href ="#" >
+            <IoStatsChartOutline/>
+            Dashboard
+            </MenuItemLink>
+            
+            <MenuItemLink href ="#" >
+            <IoArrowUpSharp/>
+            Entradas
+            </MenuItemLink>
+            
+            <MenuItemLink href ="#" >
+            <IoArrowDownSharp/>
+            Saídas
+            </MenuItemLink>
+            
+            <MenuItemLink href ="#" >
+            <IoEnterOutline/>
+            Sair
+            </MenuItemLink>
+        </MenuContainer>
+
+        </Container>);
 }
 
 export default Aside;

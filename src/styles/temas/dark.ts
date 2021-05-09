@@ -1,17 +1,20 @@
 export default{
-    title: 'light',
+    title: 'dark',
+// definição das cores do tema escuro
+   
 
-    color:{
-        primary: '#DCDCDC',
-        secondary: '#FFFF',
-        tertiary: '#F5F5F5',
 
-        white: '#000',
-        black: '#FFF',
+colors:{
+        primary: '#212121',
+        secondary: '#363636',
+        tertiary: '#D4D4D4',
+
+        white: '#FFFF',
+        black: '#000',
         gray: '#BFBFBF',
 
-        success: '#03BB85',
-        info: '#3B5998',
-        warning: '#FF6961',
+        success: '#FFC700',
+        info: '#110066',
+        warning: '#90CBFB',
     },
 };
