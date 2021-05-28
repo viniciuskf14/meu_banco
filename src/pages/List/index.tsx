@@ -1,8 +1,11 @@
 import React from 'react';
+import {Container} from './style'
 
 const List: React.FC =() =>{
     return (
-        <h1>List</h1>
+        <Container>
+
+        </Container>
     );
 }
 

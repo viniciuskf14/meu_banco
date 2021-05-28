@@ -19,12 +19,12 @@ const Aside: React.FC =() =>{
 
         <MenuContainer>
         
-           <MenuItemLink href ="#" >
+           <MenuItemLink href ="/Dashboard" >
             <IoStatsChartOutline/>
             Dashboard
             </MenuItemLink>
             
-            <MenuItemLink href ="#" >
+            <MenuItemLink href ="/list/entry-balance" >
             <IoArrowUpSharp/>
             Entradas
             </MenuItemLink>
