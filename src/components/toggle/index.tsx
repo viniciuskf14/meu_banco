@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {ToggleLabel, Container} from 'C:/Users/Vinicius Gonçalves/Documents/web/src/components/toggle/style';
+import {ToggleLabel, Container} from './style';
 import Switch from 'react-switch'
 
 
