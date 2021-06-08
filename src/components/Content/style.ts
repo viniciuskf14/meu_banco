@@ -5,4 +5,16 @@ export const Container = styled.div `
       background-color: ${props => props.theme.colors.primary};
       color: ${props => props.theme.colors.white};
       padding: 25px;
-`;
+
+      height: calc(100vh - 70px);
+      overflow-y: scroll; // todo conteudo que não couber com base no calculo acima, não mostra e manda uma rolagem
+
+      ::-webkit-scrollbar{
+            width: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb{
+            background-color: ${props => props.theme.colors.secondary};
+            border-radius: 10px;
+      }
+` ;
