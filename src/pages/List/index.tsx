@@ -1,7 +1,9 @@
 import React from 'react';
-import {Container} from './style'
+import {Container, Content} from './style'
 import ContentHeader from '../../components/ContentHeader'
 import SelectInput from '../../components/SelectInput'
+import HistoryFinanceCard from '../../components/HistoryFinanceCard'
+
 
 const options = [
     { value: 'Vinicius', label: 'Vinicius' },
@@ -14,10 +16,110 @@ const List: React.FC =() =>{
 
 
         <Container>
-        <ContentHeader title ="Entradas" lineColor ="#E44C4E">
+        <ContentHeader title ="List" lineColor ="#ffec97">
                 <SelectInput options ={ options } />    
         </ContentHeader>
         
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#E44C4E"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+        
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#E44C4E"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#483cf3"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#E44C4E"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#483cf3"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#E44C4E"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#E44C4E"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#483cf3"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#E44C4E"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+        
+        <Content>
+             <HistoryFinanceCard
+             cardColor  ="#414141"
+             tagColor ="#E44C4E"
+             title = "Conta de energia"
+             subtitle = "07/06/2021"
+             amount = "R$ 130,00"
+             />
+        </Content>
+
         
     </Container>
     )}
