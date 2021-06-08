@@ -10,8 +10,9 @@ export default{
         black: '#FFF',
         gray: '#BFBFBF',
 
+        colorTag: '#E44C4E',
         success: '#03BB85',
         info: '#3B5998',
-        warning: '#FF6961',
+        warning: '#483cf3',
     },
 };

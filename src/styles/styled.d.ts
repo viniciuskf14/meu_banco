@@ -13,6 +13,7 @@ declare module 'styled-components' {
       black: string;
       gray: string;
  
+      colorTag: string,
       success: string;
       info: string;
       warning: string;
