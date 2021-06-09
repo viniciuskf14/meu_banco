@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useMemo} from 'react';
+
 import {Container, Content, Filters} from './style'
 import ContentHeader from '../../components/ContentHeader'
 import SelectInput from '../../components/SelectInput'
 import HistoryFinanceCard from '../../components/HistoryFinanceCard'
 
+interface IRoutesParams {
+     match: {
+          params: {
+               type: string,
+          }
+     }
+}
 
 const months = [
     { value: 7, label: 'Julho' },
@@ -17,12 +25,27 @@ const months = [
      { value: 2019, label: 2019},
  ];
 
-const List: React.FC =() =>{
-    return (
+const List: React.FC<IRoutesParams> =({ match }) =>{
+   
+     const {type} = match.params;
+     
+     const title = useMemo (() => {
+           return type === 'entry-balance' ? 'Entradas' : 'Saídas' // verificação das paginas, caso for do tipo entry-balance, terá o titulo de 'Entradas'. Caso contrario, terá o titulo 'Saidas'
+
+     }, [type])
+
+     const lineColor = useMemo (() => {
+          return type === 'entry-balance' ? '#28a2c0' : '#059c1d' // verificação das paginas, caso for do tipo entry-balance, terá o titulo de 'Entradas'. Caso contrario, terá o titulo 'Saidas'
+
+    }, [type])
+   
+  
+   
+     return (
 
 
         <Container>
-        <ContentHeader title ="List" lineColor ="#ffec97">
+        <ContentHeader title = {title} lineColor ={lineColor}>
                 <SelectInput options ={ months } />    
                 <SelectInput options ={ years } /> 
         </ContentHeader>
