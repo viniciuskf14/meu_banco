@@ -28,6 +28,13 @@ position: relative;
     justify-content: space-between;
     padding-left: 17px;
 }
+
+>div span{
+    font-size: 24;
+    font-weight: 600;
+    
+
+}
 &:hover{
     opacity: .7;
     transform: translateX(10px)
@@ -35,7 +42,7 @@ position: relative;
 `;
 
 export const Tag = styled.li<ITagProps> `
-width: 10px;
+width: 13px;
 height: 30px;
 
 background-color: ${props => props.color};
