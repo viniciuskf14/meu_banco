@@ -42,6 +42,9 @@ const List: React.FC<IRoutesParams> =({ match }) =>{
    
      const [data, setData] = useState<IData[]>([])
 
+     const [monthSelected, setMonthSelected] = useState <String>('')
+     const [yearSelected, setYearSelected] = useState <String>('')
+
 
      const {type} = match.params;
      
@@ -68,7 +71,7 @@ const List: React.FC<IRoutesParams> =({ match }) =>{
                amountFormatted: item.amount, 
                frequency: item.frequency, 
                dateFormatted: item.date,
-               tagColor: item.frequency === 'recorrente' ? '#483cf3' : '#E44C4E'
+               tagColor: item.frequency === 'recorrente' ? '#E44C4E' : '#483cf3'
           }
 
      })
@@ -81,8 +84,8 @@ const List: React.FC<IRoutesParams> =({ match }) =>{
 
         <Container>
         <ContentHeader title = {title} lineColor ={lineColor}>
-                <SelectInput options ={ months } />    
-                <SelectInput options ={ years } /> 
+                <SelectInput options ={ months } onChange={(e) => setMonthSelected(e.target.value)} />    
+                <SelectInput options ={ years } onChange={(e) => setYearSelected(e.target.value)} /> 
         </ContentHeader>
         
         <Filters>

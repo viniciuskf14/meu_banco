@@ -22,7 +22,7 @@ const HistoryFinanceCard: React.FC <HistoryFinanceCardProps> =({
                 <span>{title}</span>
                 <small>{subtitle}</small>
             </div>
-            <h3>{amount}</h3>
+            <h3> R$ {amount}</h3>
         </Container>  
         
         );
