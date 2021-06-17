@@ -42,8 +42,8 @@ const List: React.FC<IRoutesParams> =({ match }) =>{
    
      const [data, setData] = useState<IData[]>([])
 
-     const [monthSelected, setMonthSelected] = useState <String>('')
-     const [yearSelected, setYearSelected] = useState <String>('')
+     const [monthSelected, setMonthSelected] = useState <String>(String(new Date().getMonth() + 1))
+     const [yearSelected, setYearSelected] = useState <String>(String(new Date().getFullYear()))
 
 
      const {type} = match.params;
